@@ -36,17 +36,52 @@
         background-color: white;
         color: black;
     }
+
+    .mosque-images-taken {
+        height: 500px;
+        width: 100%;
+        overflow: hidden;
+    }
+
+
+    @media (min-width: 1400px) {
+        .mosque-images-taken {
+            height: 800px;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .home-page-mosque-image {
+            height: 400px;
+            width: 100%;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .home-page-mosque-image {
+            height: 300px;
+            width: 100%;
+        }
+    }
+
+    @media (min-width: 992px) {
+        .home-page-mosque-image {
+            height: 400px;
+            width: 80%;
+        }
+    }
 </style>
 
 <body>
-    <header class="bg-success text-white">
-        <div class="container-fluid">
+    <header>
+        <div class="container-fluid bg-success text-white">
             <div class="row">
                 <div class="col-12">
                     <nav class="navbar navbar-expand-lg navbar-light">
                         <div class="container-fluid">
-                            <span class="navbar-brand fs-4"><i class="fa-solid fa-mosque text-white"></i></span>
-                            <button class="navbar-toggler bg-light btn" type="button" data-bs-toggle="collapse"
+                            <a href="index.html" class="navbar-brand fs-4"><i
+                                    class="fa-solid fa-mosque text-white"></i></a href="index.html">
+                            <button class="navbar-toggler fs-5 bg-light btn" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
                                 aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
@@ -94,23 +129,88 @@
                 </div>
             </div>
         </div>
+
+        <div class="container">
+            <div class="row text-center mt-5">
+
+                <div class="col-12 col-md-5 offset-md-1 p-2 p-lg-5 rounded">
+                    <div class="mt-1 mt-md-5">
+                        <h2 class="h4">LEEDS ISLAMIC CENTRE</h2>
+                        <h4 class="h4">Central Jamia Mosque</h4>
+                        <a href="#" class="btn btn-success text-white mt-2">DONATION FOR MOSQUE</a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-5 mt-3 mt-md-0">
+                    <img src="assets/images/minaret.jpg" class="img-fluid home-page-mosque-image"
+                        alt="mosque home page image">
+                </div>
+
+            </div>
+        </div>
     </header>
 
-    <main class="container">
-        <div class="row text-center mt-5">
 
-            <div class="col-12 col-md-5 offset-md-1 p-2 p-lg-5 rounded">
-                <div class="mt-1 mt-md-4 mt-lg-5">
-                    <h2 class="h4">LEEDS ISLAMIC CENTRE</h2>
-                    <h4 class="h4">Central Jamia Mosque</h4>
-                    <a href="#" class="btn btn-success text-white mt-2">DONATION FOR MOSQUE</a>
+
+
+    <main class="mt-4">
+
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-12">
+                    <img src="assets/images/مرکزی جامع مسجد و لیڈز اسلامک.jpg" class="img-fluid"
+                        alt="islamic center image in arabic language">
+                </div>
+                <div class="col-12 mt-2">
+                    <p class="lead">FRIDAY PRAYER Jama'at @<span class="bg-danger text-white">1.30pm</span> prompt</p>
+                    <p class="text-warning">Radio Azaan Frequency <span
+                            class="text-decoration-underline">454.40625</span>
+                    </p>
+                    <a href="https://tanzil.net/#1:1" class="btn btn-success">READ QURAN</a>
                 </div>
             </div>
+        </div>
 
-            <div class="col-12 col-md-5">
-                <img src="assets/images/minaret.jpg" class="img-fluid h-75" alt="mosque home page image">
+        <div class="container-fluid">
+            <div class="row mt-5">
+                <div class="col-12 offset-0 col-md-10 offset-md-1">
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="assets/images/ariel-view.jpg" class="d-block mosque-images-taken" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/images/carPark-1.jpeg" class="d-block mosque-images-taken" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/images/chandelier.jpg" class="d-block mosque-images-taken" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/images/dome.jpg" class="d-block mosque-images-taken" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/images/mahrab2.jpg" class="d-block mosque-images-taken" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/images/mahrab4.jpg" class="d-block mosque-images-taken" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/images/_mosque.jpeg" class="d-block mosque-images-taken" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon bg-dark p-4" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon bg-dark p-4" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
             </div>
-
         </div>
     </main>
 
