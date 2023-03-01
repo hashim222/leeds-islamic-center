@@ -1,0 +1,1 @@
+web: gunicorn islamic_center.wsgi
