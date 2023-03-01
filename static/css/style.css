@@ -1,0 +1,63 @@
+body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+/* Home Page header */
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+  border-radius: 7px;
+}
+
+.navbar-nav .nav-item {
+  padding: 3px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  background-color: white;
+  color: black;
+}
+
+/* home page main */
+.mosque-images-slider-for-home-page {
+  height: 500px;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* A device with a screen size less than 576 pixels */
+@media (max-width: 576px) {
+  .home-page-mosque-image {
+    height: 400px;
+    width: 100%;
+  }
+
+  .mosque-images-slider-for-home-page {
+    height: 300px;
+    width: 100%;
+    overflow-x: hidden;
+  }
+}
+
+/* A device with a screen size greater than 768 pixels */
+@media (min-width: 768px) {
+  .home-page-mosque-image {
+    height: 300px;
+    width: 100%;
+  }
+}
+
+/* A device with a screen size greater than 992 pixels */
+@media (min-width: 992px) {
+  .home-page-mosque-image {
+    height: 400px;
+    width: 80%;
+  }
+}
+
+/* A device with a screen size greater than 1400 pixels */
+@media (min-width: 1400px) {
+  .mosque-images-slider-for-home-page {
+    height: 600px;
+  }
+}

@@ -1,0 +1,128 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="keywords" content="leeds, islamic center, mosque, funeral" />
+    <meta
+      name="description"
+      content="LEEDS ISLAMIC CENTRE
+    Central Jamia Mosque"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- bootstrap version 5.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- external css file -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+
+    <!-- Site title -->
+    <title>Leeds Islamic Center</title>
+  </head>
+
+  <!-- bootstrap class sticks footer at the bottom -->
+
+  <body class="d-flex flex-column min-vh-100 gy-0">
+    <header>
+        <div class="container-fluid bg-success text-white">
+            <div class="row">
+                <div class="col-12">
+
+                    <!-- Navbar -->
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <div class="container-fluid">
+                            <a href="index.html" class="navbar-brand fs-4"><i
+                                    class="fa-solid fa-mosque text-white"></i></a href="index.html">
+                            <button class="navbar-toggler fs-6 bg-light btn" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                                <hr style="height: 5px; color: white;">
+                                <ul class="navbar-nav text-center">
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">About</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Contact</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Prayers</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Ramadhan</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Eid-fitr</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Eid-adha</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Funeral</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Media</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Press</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Madrasa</a>
+                                    </li>
+                                    <li class="nav-item d-none d-lg-block">
+                                        <a href="#" class="btn btn-warning text-white">DONATION FOR MOSQUE</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    {% block content %} 
+    
+    {% endblock %}
+    <footer>
+        Im footer
+    </footer>
+
+    <!-- jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.js"
+      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Bootstrap JavaScript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- javascript file -->
+  </body>
+</html>
