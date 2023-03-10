@@ -31,7 +31,7 @@
 
 <body class="d-flex flex-column min-vh-100 gy-0">
     <header>
-        <div class="container-fluid bg-success text-white">
+        <div class="container-fluid navbar-bg text-white">
             <div class="row">
                 <div class="col-12">
 
@@ -39,7 +39,7 @@
                     <nav class="navbar navbar-expand-lg navbar-light">
                         <div class="container-fluid">
                             <a href="{% url 'home' %}" class="navbar-brand fs-4"><i
-                                    class="fa-solid fa-mosque text-white"></i></a>
+                                    class="fa-solid fa-mosque text-success"></i></a>
                             <button class="navbar-toggler fs-6 bg-light btn" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
                                 aria-expanded="false" aria-label="Toggle navigation">
@@ -49,41 +49,53 @@
                                 <hr style="height: 5px; color: white;">
                                 <ul class="navbar-nav text-center">
                                     <li class="nav-item">
-                                        <a class="nav-link" aria-current="page" href="{% url 'home' %}">Home</a>
+                                        <a class="nav-link" href="{% url 'home' %}"><i class="fa-solid fa-house"></i>
+                                            Home</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">About</a>
+                                        <a class="nav-link" href="{% url 'about' %}"><i
+                                                class="fa-solid fa-circle-info"></i> About</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Contact</a>
+                                        <a class="nav-link" href="{% url 'contact' %}"><i
+                                                class="fa-solid fa-square-phone"></i> Contact</a>
                                     </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Prayers</a>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            <i class="fa-solid fa-person-praying"></i> Prayers
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">Monthly Prayer Timetable</a>
+                                            </li>
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">Ramadhan</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">Eid-fitr</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">Eid-adha</a>
+                                            </li>
                                     </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Ramadhan</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Eid-fitr</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Eid-adha</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Funeral</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Media</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Press</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Madrasa</a>
-                                    </li>
-                                    <li class="nav-item d-none d-lg-block">
-                                        <a href="#" class="btn btn-warning text-white">DONATION FOR MOSQUE</a>
-                                    </li>
+                                </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="fa-solid fa-hand-holding-hand"></i> Services</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="fa-solid fa-microphone"></i> Media</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="fa-solid fa-graduation-cap"></i> Madrasa</a>
+                                </li>
+                                <li class="nav-item d-none d-lg-block">
+                                    <a href="#" class="btn btn-warning text-white">DONATION FOR MOSQUE</a>
+                                </li>
                                 </ul>
                             </div>
                         </div>
@@ -100,7 +112,7 @@
     </main>
 
     <!-- site footer -->
-    <footer class="text-center text-lg-start text-muted mt-auto" style="background-color:#f1f5f8;">
+    <footer class="text-center text-lg-start text-muted mt-auto footer-bg">
         <!-- Section: Social media -->
         <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
             <!-- Left -->
@@ -198,7 +210,7 @@
         <!-- Section: Links  -->
 
         <!-- Copyright -->
-        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+        <div class="text-center p-4 copyright-bg">
             © <span class="current-year"></span> Copyright: Leeds Islamic Center - Created by Hashim Aslam
         </div>
         <!-- Copyright -->
@@ -220,6 +232,16 @@
             const date = new Date()
             const currentYear = date.getFullYear()
             $('.current-year').html(currentYear)
+
+            const currentLocation = location.href
+            const menuItem = document.querySelectorAll('.navbar-nav .nav-item .nav-link')
+            const menuLength = menuItem.length
+            console.log(menuLength)
+            for (let i = 0; i < menuLength; i++) {
+                if (menuItem[i].href === currentLocation) {
+                    menuItem[i].className = 'activeLinks'
+                }
+            }
         })
     </script>
 </body>

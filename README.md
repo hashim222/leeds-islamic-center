@@ -1,6 +1,6 @@
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-[Live Website](https://hashim222.github.io/leeds-islamic-center/)
+Live website can be accessed here [➡️here](https://islamic-center-leeds.herokuapp.com/)
 
 Welcome hashim222,
 

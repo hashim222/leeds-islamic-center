@@ -1,0 +1,65 @@
+:root {
+  --cl-primary: #f1f5f8;
+  --cl-white: #ffffff;
+  --cl-success: #198754;
+  --cl-success-light: #198754bf;
+  --cl-dark: #000000;
+}
+
+body {
+  background-color: var(--cl-primary);
+  color: var(--cl-dark);
+}
+
+.navbar-bg {
+  background-color: var(--cl-white);
+  border-bottom: 1px solid #dadadf;
+}
+
+.navbar-nav .nav-item {
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: 100%;
+}
+
+.navbar-nav .nav-item .fa-solid {
+  /* background-color: pink; */
+  font-size: 130%;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  background-color: var(--cl-success);
+  color: var(--cl-primary);
+  -webkit-transition: background-color 0.5s ease-out;
+  -moz-transition: background-color 0.5s ease-out;
+  -o-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+  border-radius: 2px;
+}
+
+.activeLinks {
+  background-color: var(--cl-success-light);
+  color: var(--cl-white);
+  display: block;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out;
+  border-radius: 2px;
+}
+
+.activeLinks:hover {
+  background-color: var(--cl-success);
+  color: var(--cl-primary);
+}
+
+/* footer section */
+
+.footer-bg {
+  background-color: var(--cl-white);
+}
+
+.copyright-bg {
+  background-color: var(--cl-success-light);
+  color: var(--cl-white);
+}
