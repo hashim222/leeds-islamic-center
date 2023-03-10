@@ -1,25 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
 :root {
   --cl-primary: #f1f5f8;
   --cl-white: #ffffff;
   --cl-success: #198754;
   --cl-success-light: #198754bf;
   --cl-dark: #000000;
+  --cl-border-color: #dadadf;
+
+  --rubik-font: "Rubik", sans-serif;
 }
 
 body {
   background-color: var(--cl-primary);
   color: var(--cl-dark);
+  font-family: var(--rubik-font);
 }
 
 .navbar-bg {
   background-color: var(--cl-white);
-  border-bottom: 1px solid #dadadf;
+  border-bottom: 1px solid var(--cl-border-color);
 }
 
 .navbar-nav .nav-item {
   margin-left: 5px;
   margin-right: 5px;
   font-size: 100%;
+  background-color: var(--cl-primary);
+}
+
+@media (max-width: 992px) {
+  .navbar-nav .nav-item {
+    margin-top: 5px;
+  }
 }
 
 .navbar-nav .nav-item .fa-solid {
