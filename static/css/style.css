@@ -94,7 +94,7 @@ body {
 .footer-bg {
   border-top: 1px solid var(--cl-border-color);
   background-image: linear-gradient(#9ab9aa99, #198754bf),
-    url(https://images.pexels.com/photos/1537086/pexels-photo-1537086.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    url(/static/images/footer-image.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
