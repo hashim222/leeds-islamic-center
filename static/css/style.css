@@ -79,15 +79,18 @@ body {
 }
 
 .main-pages {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 /* Home page */
 
-.col {
-  background-color: var(--cl-white);
-}
+/* @media screen and (min-width: 992px) {
+  .home-page-greeting-image {
+    height: 50%;
+  }  
+} */
+
 
 /* footer section */
 
