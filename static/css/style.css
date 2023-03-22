@@ -1,24 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
 :root {
-  --cl-primary: #f1f5f8;
-  --cl-white: #ffffff;
-  --cl-success: #198754;
-  --cl-success-light: #198754bf;
-  --cl-dark: #000000;
+  --cl-primary-white: #f1f5f8;
+  --cl-secondary-white: #ffffff;
+  --cl-primary-green: #198754;
+  --cl-secondary-green: #198754bf;
+  --cl-primary-dark: #000000;
   --cl-border-color: #dadadf;
-  --cl-purple-color: #3902c5;
-  --cl-light-purple-color: #5416f1d1;
+  --cl-primary-purple: #3902c5;
+  --cl-secondary-purple: #5416f1d1;
   --rubik-font: "Rubik", sans-serif;
 }
 
 body {
-  background-color: var(--cl-primary);
-  color: var(--cl-dark);
+  background-color: var(--cl-primary-white);
+  color: var(--cl-primary-dark);
   font-family: var(--rubik-font);
 }
 
 .navbar-bg {
-  background-color: var(--cl-white);
+  background-color: var(--cl-secondary-white);
   border-bottom: 1px solid var(--cl-border-color);
 }
 
@@ -26,8 +26,12 @@ body {
   margin-left: 5px;
   margin-right: 5px;
   font-size: 100%;
-  background-color: var(--cl-primary);
+  background-color: var(--cl-primary-white);
   border-radius: 5px;
+}
+
+.nav-burgur-icon {
+  background-color: var(--cl-primary-purple);
 }
 
 .logo-image {
@@ -53,8 +57,8 @@ body {
 }
 
 .navbar-nav .nav-item .nav-link:hover {
-  background-color: var(--cl-light-purple-color);
-  color: var(--cl-primary);
+  background-color: var(--cl-secondary-purple);
+  color: var(--cl-primary-white);
   -webkit-transition: background-color 0.5s ease-out;
   -moz-transition: background-color 0.5s ease-out;
   -o-transition: background-color 0.5s ease-out;
@@ -63,8 +67,8 @@ body {
 }
 
 .activeLinks {
-  background-color: var(--cl-purple-color);
-  color: var(--cl-white);
+  background-color: var(--cl-primary-purple);
+  color: var(--cl-secondary-white);
   display: block;
   padding: 0.5rem 1.2rem;
   text-decoration: none;
@@ -74,8 +78,8 @@ body {
 }
 
 .activeLinks:hover {
-  background-color: var(--cl-light-purple-color);
-  color: var(--cl-primary);
+  background-color: var(--cl-secondary-purple);
+  color: var(--cl-primary-white);
 }
 
 .main-pages {
@@ -91,12 +95,11 @@ body {
   }  
 } */
 
-
 /* footer section */
 
 .footer-bg {
   border-top: 1px solid var(--cl-border-color);
-  background-image: linear-gradient(#9ab9aa99, #198754bf),
+  background-image: linear-gradient(#45dc9357, #3902c54f),
     url("https://res.cloudinary.com/dyqykmbvz/image/upload/v1679337440/static/images/footer-image.90ce1d3c5676.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -104,17 +107,15 @@ body {
 }
 
 .footer-bg h5 {
-  color: var(--cl-purple-color);
+  color: var(--cl-primary-purple);
 }
 
 .fa-home,
 .fa-envelope,
 .fa-phone {
-  color: var(--cl-success);
   text-align: right;
 }
 
 .copyright-bg {
-  background-color: var(--cl-success-light);
-  color: var(--cl-white);
+  background-color: var(--cl-primary-purple);
 }
