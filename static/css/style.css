@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alkatra&family=Rubik&display=swap");
 :root {
   --cl-primary-white: #f1f5f8;
   --cl-secondary-white: #ffffff;
@@ -8,7 +8,10 @@
   --cl-border-color: #dadadf;
   --cl-primary-purple: #3902c5;
   --cl-secondary-purple: #5416f1d1;
+  --cl-primary-blue: #00056a;
+
   --rubik-font: "Rubik", sans-serif;
+  --alkatra-font: "Alkatra", cursive;
 }
 
 body {
@@ -89,11 +92,26 @@ body {
 
 /* Home page */
 
-/* @media screen and (min-width: 992px) {
-  .home-page-greeting-image {
-    height: 50%;
-  }  
-} */
+.home-page-header-container h3,
+.home-page-header-container h4 {
+  font-size: 170%;
+  font-family: var(--alkatra-font);
+}
+
+.home-page-header-container h3 u,
+.home-page-header-container h4 u{
+  text-decoration-color: var(--cl-primary-green);
+}
+
+.home-page-header-container a {
+  background-color: var(--cl-primary-blue);
+  color: var(--cl-secondary-white);
+}
+
+.home-page-header-container a:hover {
+  background-color: var(--cl-secondary-purple);
+  color: var(--cl-primary-white);
+}
 
 /* footer section */
 
