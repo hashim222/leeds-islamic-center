@@ -8,7 +8,6 @@
   --cl-secondary-green: #198754bf;
   --cl-primary-dark: #000000;
   --cl-border-color: #dadadf;
-  /* --cl-primary-purple: #3902c5; */
   --cl-secondary-purple: #5416f1d1;
   --cl-primary-blue: #00056a;
 
@@ -93,6 +92,12 @@ body {
 
 /* Home page */
 
+.radio-azaan {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .home-page-header-container h3,
 .home-page-header-container h4 {
   font-size: 170%;
@@ -112,6 +117,18 @@ body {
 .home-page-header-container a:hover {
   background-color: var(--cl-secondary);
   color: var(--cl-primary-white);
+}
+
+.image-carousel {
+  float: left;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  opacity: 0.9;
+}
+
+.our-community-paragraph {
+  font-family: var(--alkatra-font);
 }
 
 /* footer section */
