@@ -33,7 +33,7 @@
     <header>
         <div class="container-fluid navbar-bg text-white">
             <div class="row">
-                <div class="col-12">
+                <div class="col-12" style="background-color:#38a3a5d9">
 
                     <!-- Navbar -->
                     <nav class="navbar navbar-expand-lg navbar-light">
@@ -42,13 +42,13 @@
                                 <img class="img-fluid logo-image" src="{% static 'images/mosque-logo.png' %}"
                                     alt="mosque logo">
                             </a>
-                            <button class="navbar-toggler btn nav-burgur-icon" type="button"
-                                data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                            <button class="navbar-toggler btn nav-burgur-icon" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                                aria-expanded="false" aria-label="Toggle navigation">
                                 <i class="fa-solid fa-bars text-light"></i>
                             </button>
-                            <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
-                                <hr style="border:2px solid red">
+                            <div class="collapse navbar-collapse shadow-3 p-3 justify-content-center"
+                                id="navbarNavDropdown">
                                 <ul class="navbar-nav text-center">
                                     <li class="nav-item">
                                         <a class="nav-link" href="{% url 'home' %}"><i class="fa-solid fa-house"></i>
@@ -137,21 +137,30 @@
                 <!-- Donate now -->
                 <div class="row mt-3 text-center">
                     <div class="col-md-4 mx-auto mb-4 ml-auto">
-                        <h5 class="text-uppercase fw-bold ml-auto">Donate now
-                        </h5>
+                        <h4 class="text-uppercase fw-bold ml-auto"><i class="fa-solid fa-hand-holding-heart"></i> Donate
+                            now
+                        </h4>
                         <hr class="mb-3 mt-0 d-inline-block mx-auto w-50 text-warning"
-                            style="height: 2px">
-                        <h6>Bank: <span class="text-warning">VIRGIN MONEY</span></h6>
-                        <p>Account Name: <span class="text-warning">Leeds Islamic Centre</span></p>
-                        <p>Account No: <span class="text-warning">10213039</span></p>
-                        <p>Sort Code: <span class="text-warning">05-01-06</span></p>
+                            style="border: 2px solid #ffffff;">
+                        <h6>Bank:
+                            <u>VIRGIN MONEY</u>
+                        </h6>
+                        <p>Account Name:
+                            <u>Leeds Islamic Centre</u>
+                        </p>
+                        <p>Account No:
+                            <u>10213039</u>
+                        </p>
+                        <p>Sort Code:
+                            <u>05-01-06</u>
+                        </p>
                     </div>
 
                     <!-- Contact us -->
                     <div class="col-md-4 mx-auto mb-md-0 mb-4 ml-auto">
-                        <h5 class="text-uppercase fw-bold ml-auto">Contact Us</h5>
+                        <h4 class="text-uppercase fw-bold ml-auto"><i class="fa-solid fa-headset"></i> Contact Us</h4>
                         <hr class="mb-3 mt-0 d-inline-block mx-auto w-50 text-warning"
-                            style="height: 2px">
+                            style="border: 2px solid #ffffff;">
                         <p><i class="fas fa-home me-2"></i>
                             <a href="https://goo.gl/maps/k4MZYft7Yqre5Hpr7" target="_blank" class="link-info">46
                                 Spencer Pl, Leeds LS7 4BR</a>
@@ -167,9 +176,10 @@
 
                     <!-- Social media -->
                     <div class="col-md-4 mx-auto mb-4 ml-auto">
-                        <h5 class="text-uppercase fw-bold ml-auto">Social media</h5>
+                        <h4 class="text-uppercase fw-bold ml-auto"><i class="fa-solid fa-mobile-screen-button"></i>
+                            Social media</h4>
                         <hr class="mb-3 mt-0 d-inline-block mx-auto w-50 text-warning"
-                            style="height: 2px">
+                            style="border: 2px solid #ffffff;">
                         <p>
                             Follow us on these social media platfroms:
                         </p>
@@ -180,6 +190,9 @@
                             <a class="btn text-white btn-floating m-1" style="background-color: #3b5998;"
                                 href="https://www.facebook.com/LeedsIslamicCentre/" target="_blank" role="button"><i
                                     class="fa-brands fa-facebook-f"></i></a>
+                            <a class="btn text-white btn-floating m-1" style="background-color: red;"
+                                href="https://www.youtube.com/c/leedsislamiccentre" target="_blank" role="button"><i
+                                    class="fa-brands fa-youtube"></i></a>
                         </p>
                     </div>
                 </div>
@@ -194,8 +207,9 @@
     </footer>
 
     <!-- jquery -->
-    <script src="https://code.jquery.com/jquery-3.6.1.js"
-        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+        integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!-- Bootstrap JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
