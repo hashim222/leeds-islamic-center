@@ -126,11 +126,31 @@ body {
   object-fit: cover;
   opacity: 0.9;
 }
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  color: var(--cl-secondary-white);
+  background-color: var(--cl-primary);
+  border-radius: 30%;
+  padding: 20px;
+}
 
 .our-community-paragraph {
   font-family: var(--alkatra-font);
 }
 
+/* About Page */
+
+.about-page-header-image {
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+}
+@media (max-width: 992px) {
+  .about-page-header-image {
+    height: auto;
+    width: auto;
+  }
+}
 /* footer section */
 
 .footer-bg {
