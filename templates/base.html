@@ -200,6 +200,11 @@
             </div>
         </section>
 
+        <!-- Back to top button -->
+        <button type="button" class="btn btn-warning text-light btn-floating btn-lg" id="btn-back-to-top">
+            <i class="fa-solid fa-arrow-up"></i>
+        </button>
+
         <!-- Copyright -->
         <div class="text-center p-4 copyright-bg">
             © <span class="current-year"></span> Copyright: Leeds Islamic Center - Created by Hashim Aslam
@@ -233,6 +238,31 @@
                 }
             }
         })
+
+        // Code for back to top button.
+        // This part of the code was created using https://mdbootstrap.com/ 
+        let mybutton = document.getElementById("btn-back-to-top");
+
+        const scrollFunction = () => {
+            if (
+                document.body.scrollTop > 20 ||
+                document.documentElement.scrollTop > 20
+            ) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        const backToTop = () => {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+        mybutton.addEventListener("click", backToTop);
+
+        window.onscroll = function () {
+            scrollFunction();
+        };
     </script>
 </body>
 
