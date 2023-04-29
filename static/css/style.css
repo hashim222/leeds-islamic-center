@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Alkatra&family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alkatra&family=Raleway&family=Rubik&display=swap");
 :root {
   --cl-primary: #38a3a5c2;
   --cl-secondary: #055160;
@@ -13,6 +13,7 @@
 
   --rubik-font: "Rubik", sans-serif;
   --alkatra-font: "Alkatra", cursive;
+  --raleway-font: "Raleway", sans-serif;
 }
 
 body {
@@ -138,7 +139,26 @@ body {
   font-family: var(--alkatra-font);
 }
 
+.mosque-team-member-images {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  float: lef;
+}
+
+.meet-the-team-header {
+  font-family: var(--raleway-font);
+  color: var(--cl-primary-blue);
+}
+
 /* About Page */
+
+.about-us-header-text {
+  font-family: var(--raleway-font);
+  color: var(--cl-primary-blue);
+  font-weight: bolder;
+  text-shadow: 2px 2px var(--cl-primary);
+}
 
 .about-page-header-image {
   height: 500px;
