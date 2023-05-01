@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Alkatra&family=Raleway&family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alkatra&family=Anton&family=Raleway&family=Rubik&display=swap");
 :root {
   --cl-primary: #38a3a5c2;
   --cl-secondary: #055160;
@@ -14,6 +14,7 @@
   --rubik-font: "Rubik", sans-serif;
   --alkatra-font: "Alkatra", cursive;
   --raleway-font: "Raleway", sans-serif;
+  --anton-font: "Anton", sans-serif;
 }
 
 body {
@@ -172,6 +173,29 @@ body {
   width: 100%;
   object-fit: cover;
 }
+
+.about-us-section-header-heros {
+  font-family: var(--anton-font);
+  text-align: center;
+  color: var(--cl-secondary);
+}
+
+.brief-history {
+  margin-top: 40px;
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  border-radius: 0 0 0 40%;
+}
+
+.new-mosque-project {
+  margin-top: 40px;
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 0 0 40% 0;
+}
+
 @media (max-width: 992px) {
   .about-page-header-image {
     height: auto;
